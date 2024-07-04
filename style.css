@@ -17,8 +17,8 @@ body {
 
 .container {
   background: #ede8f5;
-  height: 30rem;
-  width: 37.5rem;
+  height: 25rem;
+  width: 30rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 0.9rem;
   overflow: hidden;
@@ -28,7 +28,7 @@ body {
 .container h1 {
   color: #3d52a0;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   margin-bottom: 0.5rem;
 }
 
@@ -56,14 +56,26 @@ body {
   background: #556bbb;
 }
 
-ul li {
+#taskList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1rem;
+}
+
+#taskList p {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  column-gap: 4rem;
   background: #3d52a0;
-  margin: 0.5rem;
-  list-style: none;
-  font-size: 1.2rem;
+  width: 90%;
+  padding: 0.7rem;
+  border-radius: 2rem;
   color: #fffefe;
-  padding: 0.3rem;
-  padding-left: 1rem;
-  border-radius: 0.6rem;
-  width: 60%;
+  text-transform: capitalize;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.checked span {
+  text-decoration: line-through;
 }
