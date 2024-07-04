@@ -71,7 +71,6 @@ body {
 #taskList p {
   display: grid;
   grid-template-columns: 2fr 0.5fr;
-  column-gap: 4rem;
   background: #3d52a0;
   width: 90%;
   padding: 0.7rem;
@@ -79,11 +78,19 @@ body {
   color: #fffefe;
   text-transform: capitalize;
   margin-top: 0.3rem;
-  font-size: 0.8rem;
+}
+
+#taskList p span {
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .fa-trash {
-  font-size: 0.9rem;
   border-radius: 2rem;
   cursor: pointer;
+  margin-left: 0.6rem;
+}
+
+.checked {
+  text-decoration: line-through;
 }

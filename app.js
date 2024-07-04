@@ -9,8 +9,7 @@ addBtn.addEventListener("click", () => {
     alert("Task cannot be empty");
   } else {
     let task = document.createElement("p");
-    task.innerHTML = `<span>${input.value}</span><i class="fa-solid fa-trash">`;
-    console.log(task);
+    task.innerHTML = `<span id="taskName">${input.value}</span><i class="fa-solid fa-trash">`;
     taskList.appendChild(task);
     taskCount++;
     counter.innerHTML = `${taskCount}`;
@@ -25,4 +24,16 @@ addBtn.addEventListener("click", () => {
       counter.innerHTML = `${taskCount}`;
     };
   });
+
+  const taskName = document.getElementById("taskName");
+  taskName.onclick = () => {
+    taskName.classList.toggle("checked");
+    if (taskName.classList.contains("checked")) {
+      taskCount--;
+      counter.innerHTML = `${taskCount}`;
+    } else {
+      taskCount++;
+      counter.innerHTML = `${taskCount}`;
+    }
+  };
 });
