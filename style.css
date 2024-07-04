@@ -17,7 +17,7 @@ body {
 
 .container {
   background: #ede8f5;
-  height: 25rem;
+  min-height: 16rem;
   width: 30rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 0.9rem;
@@ -32,7 +32,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.container input {
+.container #userInput {
   width: 80%;
   padding: 0.5rem;
   background: #fffefe;
@@ -40,6 +40,13 @@ body {
   border: none;
   outline: none;
   margin-bottom: 0.5rem;
+}
+
+.container p {
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #3d52a0;
+  margin: 0.3rem;
 }
 
 .container button {
@@ -59,7 +66,6 @@ body {
 #taskList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column: 1rem;
 }
 
 #taskList p {
@@ -76,6 +82,8 @@ body {
   font-size: 0.8rem;
 }
 
-.checked span {
-  text-decoration: line-through;
+.fa-trash {
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  cursor: pointer;
 }
