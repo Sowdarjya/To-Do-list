@@ -72,25 +72,15 @@ body {
   display: grid;
   grid-template-columns: 2fr 0.5fr;
   background: #3d52a0;
-  width: 90%;
+  width: 95%;
   padding: 0.7rem;
   border-radius: 2rem;
   color: #fffefe;
-  text-transform: capitalize;
   margin-top: 0.3rem;
-}
-
-#taskList p span {
-  cursor: pointer;
-  font-size: 1rem;
 }
 
 .fa-trash {
   border-radius: 2rem;
   cursor: pointer;
   margin-left: 0.6rem;
-}
-
-.checked {
-  text-decoration: line-through;
 }

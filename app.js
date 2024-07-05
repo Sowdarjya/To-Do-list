@@ -24,16 +24,4 @@ addBtn.addEventListener("click", () => {
       counter.innerHTML = `${taskCount}`;
     };
   });
-
-  const taskName = document.getElementById("taskName");
-  taskName.onclick = () => {
-    taskName.classList.toggle("checked");
-    if (taskName.classList.contains("checked")) {
-      taskCount--;
-      counter.innerHTML = `${taskCount}`;
-    } else {
-      taskCount++;
-      counter.innerHTML = `${taskCount}`;
-    }
-  };
 });
