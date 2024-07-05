@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
 }
-
 body {
   background: linear-gradient(120deg, #8697c4, #adbbda);
   height: 100vh;
@@ -14,7 +12,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .container {
   background: #ede8f5;
   min-height: 16rem;
@@ -24,14 +21,12 @@ body {
   overflow: hidden;
   padding: 4rem 3rem 7rem;
 }
-
 .container h1 {
   color: #3d52a0;
   text-transform: uppercase;
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
 }
-
 .container #userInput {
   width: 80%;
   padding: 0.5rem;
@@ -41,14 +36,12 @@ body {
   outline: none;
   margin-bottom: 0.5rem;
 }
-
 .container p {
   font-size: 1rem;
   font-weight: bolder;
   color: #3d52a0;
   margin: 0.3rem;
 }
-
 .container button {
   background: #3d52a0;
   border: none;
@@ -57,17 +50,14 @@ body {
   border-radius: 0.4rem;
   font-size: 1rem;
 }
-
 .container button:hover {
   cursor: pointer;
   background: #556bbb;
 }
-
 #taskList {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 #taskList p {
   display: grid;
   grid-template-columns: 2fr 0.5fr;
@@ -78,7 +68,6 @@ body {
   color: #fffefe;
   margin-top: 0.3rem;
 }
-
 .fa-trash {
   border-radius: 2rem;
   cursor: pointer;
